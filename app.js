@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
+var flash = require('connect-flash');
 
 var routes = require('./routes/index');
 var settings = require('./settings');
@@ -14,6 +15,7 @@ var app = express();                                    // 生成一个express�
 app.set('views', path.join(__dirname, 'views'));        // 设置视图文件夹
 app.set('view engine', 'ejs');                          // 设置模板引擎
 
+app.use(flash());
 app.use(session({
     secret:settings.cookieSecrect,                      // 防止篡改cookie
     key:settings.db,                                    // cookie的名字
