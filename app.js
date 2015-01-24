@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var settings = require('./settings');
 
 var app = express();                                    // 生成一个express实例
 
