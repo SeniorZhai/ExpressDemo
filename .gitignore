@@ -31,11 +31,6 @@ node_modules
 
 *.iml
 
-./database
+database/
 
-*.0
-
-*.ns
-*._1
-
-database/journal/lsn
+*._0
