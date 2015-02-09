@@ -30,3 +30,12 @@ node_modules
 *.xml
 
 *.iml
+
+./database
+
+*.0
+
+*.ns
+*._1
+
+database/journal/lsn

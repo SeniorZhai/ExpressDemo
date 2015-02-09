@@ -3,12 +3,12 @@ var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var session = require('express-session');
+var session = require('express-session');               //
 var MongoStore = require('connect-mongo')(session);
 var flash = require('connect-flash');
 
 var routes = require('./routes/index');
-var settings = require('./settings');
+var settings = require('./settings');                   // 数据库设置
 
 var app = express();                                    // 生成一个express实例
 
